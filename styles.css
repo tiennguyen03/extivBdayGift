@@ -238,3 +238,11 @@ img {
 #reveal-btn:hover {
     transform: scale(1.1);
 }
+
+.click-message {
+    font-size: clamp(16px, 2vw, 24px);
+    color: #333;
+    margin-top: 20px;
+    opacity: 0.8;
+    animation: pulse 2s infinite ease-in-out;
+}
