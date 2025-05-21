@@ -68,16 +68,16 @@ h2:hover{
 .image-container {
     position: fixed;
     z-index: -1;  /* Place images behind the content */
-    bottom: 2vh;
+    bottom: -10vh;  /* Move images much lower */
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     flex-direction: row;
-    gap: clamp(50px, 8vw, 200px);  /* Slightly reduced gap */
+    gap: clamp(30px, 6vw, 150px);  /* Further reduced gap */
     width: 90vw;
     justify-content: center;
     align-items: center;
-    opacity: 0.9;  /* Slightly transparent to not interfere with text */
+    opacity: 0.7;  /* More transparent */
 }
 
 /* Add transition to all images for smooth scaling */
