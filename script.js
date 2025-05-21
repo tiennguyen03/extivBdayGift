@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const giftCode = document.querySelector('.gift-code');
     const audio = document.getElementById('background-music');
 
-    // Play audio on first click anywhere on the page
-    document.addEventListener('click', function() {
+    // Play audio on first click anywhere on the page    document.addEventListener('click', function() {
+        audio.volume = 0.3; // Set volume to 30%
         audio.play().catch(function(error) {
             console.log("Audio play failed:", error);
         });
