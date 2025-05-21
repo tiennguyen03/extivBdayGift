@@ -68,7 +68,7 @@ h2:hover{
 .image-container {
     position: fixed;
     z-index: -1;  /* Place images behind the content */
-    bottom: -10vh;  /* Move images much lower */
+    bottom: -25vh;  /* Move images much lower */
     left: 50%;
     transform: translateX(-50%);
     display: flex;
