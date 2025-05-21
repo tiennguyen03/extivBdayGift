@@ -19,18 +19,16 @@ body, html {
 }
 
 h1{
-    font-size: 236px;
-    margin: 0%;
-    transition: transform 0.3s ease-in-out;
+    font-size: clamp(60px, 10vw, 236px);
     margin: 0;
+    transition: transform 0.3s ease-in-out;
     padding: 0;
 }
 
 h2{
-    font-size: 128px;
-    margin: 0%;
-    transition: transform 0.3s ease-in-out;
+    font-size: clamp(40px, 8vw, 128px);
     margin: 0;
+    transition: transform 0.3s ease-in-out;
     padding: 0;
 }
 

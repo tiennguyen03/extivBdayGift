@@ -4,6 +4,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const closeBtn = document.getElementById('close-modal');
     const revealBtn = document.getElementById('reveal-btn');
     const giftCode = document.querySelector('.gift-code');
+    const audio = document.getElementById('background-music');
+
+    // Play audio on first click anywhere on the page
+    document.addEventListener('click', function() {
+        audio.play().catch(function(error) {
+            console.log("Audio play failed:", error);
+        });
+    }, { once: true });
 
     // Show modal when gift button is clicked
     giftBtn.addEventListener('click', function() {
