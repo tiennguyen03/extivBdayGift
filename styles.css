@@ -21,6 +21,7 @@ body, html {
     align-items: center;
     text-align: center;
     position: relative;
+    z-index: 1;  /* Ensure main content stays above images */
 }
 
 h1{
@@ -66,16 +67,17 @@ h2:hover{
 
 .image-container {
     position: fixed;
-    z-index: 1000;
-    bottom: 5vh;
+    z-index: -1;  /* Place images behind the content */
+    bottom: 2vh;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     flex-direction: row;
-    gap: clamp(50px, 10vw, 300px);  /* responsive gap */
+    gap: clamp(50px, 8vw, 200px);  /* Slightly reduced gap */
     width: 90vw;
     justify-content: center;
     align-items: center;
+    opacity: 0.9;  /* Slightly transparent to not interfere with text */
 }
 
 /* Add transition to all images for smooth scaling */
