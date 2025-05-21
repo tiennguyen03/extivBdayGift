@@ -5,17 +5,22 @@ body, html {
     padding: 0;
     height: 100%;
     overflow-x: hidden;
+    min-height: 100vh;
+    width: 100vw;
 }
 
 #main {
-    height: 100vh;
+    min-height: 100vh;
+    width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 20px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    position: relative;
 }
 
 h1{
@@ -60,24 +65,27 @@ h2:hover{
 }
 
 .image-container {
-    position: absolute;
+    position: fixed;
     z-index: 1000;
-    top: 100%;
+    bottom: 5vh;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     display: flex;
     flex-direction: row;
-    gap: 300px;  /* adds space between images */
+    gap: clamp(50px, 10vw, 300px);  /* responsive gap */
+    width: 90vw;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Add transition to all images for smooth scaling */
 img {
-    max-width: 200px;
+    max-width: clamp(100px, 15vw, 200px);
     height: auto;
     display: block;
     border: #ffffff;
     border-width: 20px;
-    transition: transform 0.3s ease-in-out;  /* Add this line */
+    transition: transform 0.3s ease-in-out;
 }
 
 /* Apply hover effect to each image */
