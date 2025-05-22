@@ -6,6 +6,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const giftCode = document.querySelector('.gift-code');
     const audio = document.getElementById('background-music');
 
+    // Set volume immediately when page loads
+    audio.volume = 0.3;
+
     // Play audio on first click anywhere on the page
     document.addEventListener('click', function() {
         audio.volume = 0.3; // Set volume to 30%
